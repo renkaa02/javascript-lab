@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <h2>JavaScriptFunction Expression</h2>
+    <script> 
+        const greet = function() {
+            return "Hello from function expression!";
+        };
+        alert(greet());
+    </script>
+</body>
+</html>
