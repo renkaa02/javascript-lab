@@ -1,0 +1,522 @@
+/* -------------------------
+   BASIC RESET
+------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background:
+        #fff5f8;
+
+    color:
+        #4a3740;
+
+    min-height: 100vh;
+
+    padding: 25px 15px;
+}
+
+
+/* -------------------------
+   MAIN CONTAINER
+------------------------- */
+
+.container {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+header h1 {
+
+    color: #b85c7a;
+
+    font-size: 36px;
+
+    margin-bottom: 8px;
+}
+
+header p {
+
+    color: #876875;
+
+    font-size: 16px;
+}
+
+
+/* -------------------------
+   SECTIONS
+------------------------- */
+
+.add-section,
+.timer-section,
+.schedule-section {
+
+    background: #ffffff;
+
+    border: 1px solid #f2cbd7;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(184, 92, 122, 0.08);
+}
+
+
+h2 {
+
+    color: #a84f6d;
+
+    margin-bottom: 20px;
+}
+
+
+/* -------------------------
+   FORM
+------------------------- */
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #664653;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #e8b9c8;
+
+    border-radius: 9px;
+
+    background: #fffafd;
+
+    font-size: 15px;
+
+    color: #4a3740;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    border-color: #c86d8c;
+
+    box-shadow:
+        0 0 0 3px
+        #fce2eb;
+}
+
+
+/* -------------------------
+   BUTTONS
+------------------------- */
+
+button {
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 12px 20px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #d982a0;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+
+    background: #c86d8c;
+}
+
+
+button:disabled {
+
+    background: #e5c7d0;
+
+    cursor: not-allowed;
+}
+
+
+/* -------------------------
+   TIMER
+------------------------- */
+
+.timer-section {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #ffe5ee
+        );
+}
+
+
+.timer-label {
+
+    color: #b85c7a;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+#currentClass {
+
+    margin-bottom: 5px;
+
+    font-size: 27px;
+}
+
+
+#currentTeacher {
+
+    color: #876875;
+
+    margin-bottom: 20px;
+}
+
+
+#timer {
+
+    font-size: 65px;
+
+    font-weight: bold;
+
+    color: #a84f6d;
+
+    letter-spacing: 3px;
+
+    margin: 20px 0;
+}
+
+
+#timerStatus {
+
+    color: #876875;
+
+    margin-bottom: 20px;
+}
+
+
+.stop-button {
+
+    background: #c26b7d;
+
+    margin-left: 8px;
+}
+
+
+/* -------------------------
+   SCHEDULE HEADER
+------------------------- */
+
+.schedule-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.schedule-header h2 {
+
+    margin-bottom: 4px;
+}
+
+
+#currentDate {
+
+    color: #92717d;
+
+    font-size: 14px;
+}
+
+
+#classCount {
+
+    background: #fde3eb;
+
+    color: #a84f6d;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* -------------------------
+   CLASS CARD
+------------------------- */
+
+.class-card {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #f1d1db;
+
+    border-radius: 12px;
+
+    background: #fffafb;
+}
+
+
+.class-info h3 {
+
+    color: #633f4c;
+
+    margin-bottom: 7px;
+}
+
+
+.class-info p {
+
+    color: #92717d;
+
+    margin-top: 4px;
+
+    font-size: 14px;
+}
+
+
+.class-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* -------------------------
+   STATUS
+------------------------- */
+
+.status {
+
+    padding: 6px 10px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.status.upcoming {
+
+    background: #fff0c9;
+
+    color: #a47a20;
+}
+
+
+.status.ongoing {
+
+    background: #dff4e5;
+
+    color: #38734a;
+}
+
+
+.status.completed {
+
+    background: #eeeeee;
+
+    color: #777777;
+}
+
+
+.status.paused {
+
+    background: #f9e0e7;
+
+    color: #a84f6d;
+}
+
+
+.select-button {
+
+    padding: 8px 13px;
+
+    font-size: 13px;
+}
+
+
+.empty {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #a48791;
+
+    background: #fff8fa;
+
+    border-radius: 12px;
+}
+
+
+/* -------------------------
+   RESPONSIVE DESIGN
+------------------------- */
+
+@media (max-width: 650px) {
+
+    body {
+
+        padding: 15px 10px;
+    }
+
+
+    header h1 {
+
+        font-size: 28px;
+    }
+
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .add-section,
+    .timer-section,
+    .schedule-section {
+
+        padding: 18px;
+    }
+
+
+    #timer {
+
+        font-size: 42px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .schedule-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .class-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .class-actions {
+
+        width: 100%;
+
+        justify-content:
+            space-between;
+    }
+
+
+    .stop-button {
+
+        margin-left: 4px;
+    }
+
+}
