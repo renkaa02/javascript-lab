@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+</head>
+<body>
+    <script>
+        let numbers = [2,4,6,8,10];
+        document.write("Original Array: " + numbers);
+    </script>
+</body>
+</html>
