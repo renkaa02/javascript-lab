@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class Scheduler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1> Class Scheduler</h1>
+            <p>Plan your classes and track them in real time</p>
+        </header>
+
+        <!-- ADD CLASS SECTION -->
+        <section class="add-section">
+
+            <h2>Add New Class</h2>
+
+            <form id="classForm">
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="e.g. JavaScript"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Teacher</label>
+                        <input
+                            type="text"
+                            id="teacher"
+                            placeholder="e.g. Mr. Sharma"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Start Time</label>
+                        <input
+                            type="time"
+                            id="startTime"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label>Duration (minutes)</label>
+                        <input
+                            type="number"
+                            id="duration"
+                            min="1"
+                            placeholder="60"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <button type="submit">
+                    + Add Class
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- LIVE TIMER -->
+        <section class="timer-section">
+
+            <p class="timer-label">CURRENT CLASS</p>
+
+            <h2 id="currentClass">
+                No class running
+            </h2>
+
+            <p id="currentTeacher">
+                Add a class to begin
+            </p>
+
+            <div id="timer">
+                00:00:00
+            </div>
+
+            <p id="timerStatus">
+                Waiting for class
+            </p>
+
+            <button id="startTimer" disabled>
+                ▶ Start Timer
+            </button>
+
+            <button id="stopTimer" class="stop-button" disabled>
+                ■ Stop Timer
+            </button>
+
+        </section>
+
+
+        <!-- SCHEDULE -->
+        <section class="schedule-section">
+
+            <div class="schedule-header">
+
+                <div>
+                    <h2>Today's Schedule</h2>
+                    <p id="currentDate"></p>
+                </div>
+
+                <span id="classCount">
+                    0 Classes
+                </span>
+
+            </div>
+
+            <div id="scheduleList">
+
+                <div class="empty">
+                    No classes scheduled yet.
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
